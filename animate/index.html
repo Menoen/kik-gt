@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>啊</title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var timer = 0;
+				$(".kik").mousedown(function(){
+					$(".my_atama").animate({
+						height:"30px",
+						width:"340px",
+						top:"200px",
+						borderRadius:"20px",
+						left:"110px",
+					})
+						timer++;
+						$("span").html(timer);
+				})
+				$(".kik").mouseup(function(){
+					$(".my_atama").animate({
+						height:"200px",
+						width:"200px",
+						top:"0",
+						left:"130px",
+						borderRadius:"100px",
+					});
+					$(".my_atama").animate({
+						height:"170px",
+						top:"60px",
+						borderRadius:"90px",
+					});
+					$(".my_atama").animate({
+						height:"200px",
+						width:"200px",
+						top:"27px",
+						left:"130px",
+						borderRadius:"100px",
+					});
+					$(".my_atama").animate({
+						height:"180px",
+						top:"50px",
+						borderRadius:"95px",
+					});
+					$(".my_atama").animate({
+						height:"200px",
+						width:"200px",
+						top:"30",
+						left:"130px",
+						borderRadius:"100px",
+					});
+				})
+			})
+		</script>
+		<style type="text/css">
+			body{
+				position: relative;
+			}
+			.my_atama{
+				position: absolute;
+				height: 200px;
+				width: 200px;
+				color: red;
+				left: 130px;
+				top:30px;
+				background-color: #c3c3c3;
+				border-radius: 100px;
+			}
+			.kik{
+				border: none;
+				left: 400px;
+			}
+			a{
+				text-decoration: none;
+				border: 1px solid #c3c3c3;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="kik">T!!!</button>
+		<div class="my_atama">
+		</div>
+		<p>gt的脑子被敲击:<span id="span1">0</span>次!哈哈哈哈哈</p>
+		<p>不想打击gt了?</p><a href="confort.html">爱护一下!</a>
+	</body>
+</html>
